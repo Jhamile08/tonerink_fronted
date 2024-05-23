@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+:root {
+    --blue: #03436D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #EAEBEF;
+    width: 100%;
+}
+
+/* sistema de filtrado*/
+
+[value="cartuchos"]:checked~.categorias-contenedor .categoria:not([data-category="cartuchos"]),
+[value="cartuchos-hp-original"]:checked~.categorias-contenedor .categoria .tarjeta:not([data-category="cartuchos-hp-original"]),
+[value="cartuchos-hp-generico"]:checked~.categorias-contenedor .categoria .tarjeta:not([data-category="cartuchos-hp-generico"]),
+[value="cartuchos-canon-original"]:checked~.categorias-contenedor .categoria .tarjeta:not([data-category="cartuchos-canon-original"]),
+
+[value="toner"]:checked~.categorias-contenedor .categoria:not([data-category="toner"]),
+[value="toner-hp-original"]:checked~.categorias-contenedor .categoria .tarjeta:not([data-category="toner-hp-original"]),
+[value="toner-hp-generico"]:checked~.categorias-contenedor .categoria .tarjeta:not([data-category="toner-hp-generico"]),
+[value="toner-samsung-original"]:checked~.categorias-contenedor .categoria .tarjeta:not([data-category="toner-samsung-original"]),
+[value="toner-samsung-generico"]:checked~.categorias-contenedor .categoria .tarjeta:not([data-category="toner-samsung-generico"]),
+[value="toner-lexmark-original"]:checked~.categorias-contenedor .categoria .tarjeta:not([data-category="toner-lexmark-original"]),
+
+[value="toner-para-fotocopiadoras"]:checked~.categorias-contenedor .categoria:not([data-category="toner-para-fotocopiadoras"]),
+[value="toner-fotocopiadoras-ricoh-original"]:checked~.categorias-contenedor .categoria .tarjeta:not([data-category="toner-fotocopiadoras-ricoh-original"]),
+[value="toner-fotocopiadoras-ricoh-generico"]:checked~.categorias-contenedor .categoria .tarjeta:not([data-category="toner-fotocopiadoras-ricoh-generico"]),
+[value="toner-fotocopiadoras-kyocera-original"]:checked~.categorias-contenedor .categoria .tarjeta:not([data-category="toner-fotocopiadoras-kyocera-original"]),
+[value="toner-fotocopiadoras-kyocera-generico"]:checked~.categorias-contenedor .categoria .tarjeta:not([data-category="toner-fotocopiadoras-kyocera-generico"]),
+
+[value="botellas-de-tinta"]:checked~.categorias-contenedor .categoria:not([data-category="botellas-de-tinta"]),
+[value="botellas-de-tinta-hp-original"]:checked~.categorias-contenedor .categoria .tarjeta:not([data-category="botellas-de-tinta-hp-original"]),
+[value="botellas-de-tinta-hp-generico"]:checked~.categorias-contenedor .categoria .tarjeta:not([data-category="botellas-de-tinta-hp-generico"]),
+[value="botellas-de-tinta-epson-original"]:checked~.categorias-contenedor .categoria .tarjeta:not([data-category="botellas-de-tinta-epson-original"]),
+[value="botellas-de-tinta-epson-generico"]:checked~.categorias-contenedor .categoria .tarjeta:not([data-category="botellas-de-tinta-epson-generico"]),
+[value="botellas-de-tinta-brother-original"]:checked~.categorias-contenedor .categoria .tarjeta:not([data-category="botellas-de-tinta-brother-original"]),
+[value="botellas-de-tinta-brother-generico"]:checked~.categorias-contenedor .categoria .tarjeta:not([data-category="botellas-de-tinta-brother-generico"]),
+[value="botellas-de-tinta-canon-original"]:checked~.categorias-contenedor .categoria .tarjeta:not([data-category="botellas-de-tinta-canon-original"]),
+[value="botellas-de-tinta-canon-generico"]:checked~.categorias-contenedor .categoria .tarjeta:not([data-category="botellas-de-tinta-canon-generico"]),
+
+[value="cintas-de-impresion"]:checked~.categorias-contenedor .categoria:not([data-category="cintas-de-impresion"]),
+[value="cinta-de-impresion-epson-original"]:checked~.categorias-contenedor .categoria .tarjeta:not([data-category="cinta-de-impresion-epson-original"]) {
+    display: none;
+}
+
+/* header */
+header {
+    background: var(--blue);
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-link-header {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    list-style: none;
+}
+
+.sidebar {
+    width: 400px;
+}
+
+
+/* contenedor de categorias */
+
+
+.contenedor-post {
+    width: 100%;
+    margin: 0;
+    display: flex;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.categorias-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.cartel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background-color: var(--blue);
+    width: 85%;
+    border-radius: 40px;
+    color: white;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 300;
+
+}
+.cartel p a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.cartel p span{
+    text-decoration: none;
+    color: white;
+    font-size: 21px;
+    font-weight: bolder;
+}
+
+.categoria {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 10px
+}
+
+
+/* navegacion */
+
+
+.contenedor-principal {
+    width: 100%;
+}
+
+.nav-productos {
+    position: fixed;
+
+    background: #FFF;
+    border-radius: 0 16px 16px 0;
+    padding: 20px 40px;
+    width: 300px;
+}
+
+.contenedor-lista {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.content-list{
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.lista-item {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.lista-item--click {
+    cursor: pointer;
+
+}
+
+.lista-boton {
+    display: flex;
+    cursor: pointer;
+}
+
+.arrow .img-arrow {
+    transform: rotate(90deg);
+}
+
+.img-arrow {
+    transition: transform .3s;
+
+}
+
+.sub-lista {
+    width: 80%;
+    margin-left: auto;
+    border-left: 2px solid #303440;
+    text-align: left;
+    list-style: none;
+    transition: all 300ms ease;
+    height: 0;
+}
+
+.sub-lista label {
+    display: block;
+    transition: all 0.2s ease-out;
+}
+
+.sub-lista li label {
+    display: block;
+}
+
+.sub-lista li:hover {
+    background: #F6F8FA;
+    width: 80%;
+}
+
+.sub-lista:target .nav_link--inside {
+    max-width: 110px;
+}
+
+.nav_link {
+    font-size: 17px;
+    color: #000000;
+    display: flex;
+    text-align: left;
+    padding: 20px 100px 10px 0px;
+    text-decoration: none;
+    cursor: pointer;
+    width: 90%;
+
+}
+
+.nav_link--select {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.nav_link--inside {
+    padding-left: 20px;
+    text-align: left;
+}
+
+/* buscador */
+.buscador-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    width: 100%;
+}
+
+.search {
+    width: 60%;
+    height: 100%;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 50px 0px 0px 50px;
+    font-size: 16px;
+    transition: all .5s ease;
+}
+
+.btn-buscador {
+    width: 100%;
+    height: 40px;
+    background-color: var(--blue);
+    border-radius: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px;
+    cursor: pointer;
+}
+
+
+
+.contenedor1-buscador {
+    width: 40px;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 50px 50px 0px;
+}
+
+.fa-magnifying-glass {
+    color: white;
+    font-size: 18px;
+}
+
+
+/* tarjeta de productos */
+
+
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid lightgray;
+    box-shadow: 1px 1px 6px 2px #d3d3d3d1;
+    background: #FFF;
+    border-radius: 15px;
+    width: 260px;
+    padding: 10px 16px;
+    box-sizing: content-box;
+}
+
+.tarjeta:hover {
+    border: 2px solid rgb(192, 192, 192);
+    box-shadow: 3px 3px 12px 3px #8f8f8fd1;
+    background: #FFF;
+}
+
+.tarjeta-contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* contenido de la tarjeta  */
+
+.nombre-producto {
+    width: 70%;
+    text-align: center;
+}
+
+.contenedor-nombre-producto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rendimiento-producto {
+    font-size: 15px;
+    margin-top: 5px;
+    font-weight: 500;
+
+}
+
+.compatibilidad-producto {
+    font-size: 15px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.precio-producto {
+    font-size: 20px;
+    text-align: center;
+    padding: 4px;
+}
+
+.sub-categoria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.img-producto {
+    width: 100%;
+    height: 192px;
+}
+
+.boton-compra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--blue);
+    border: 2px solid var(--blue);
+    border-radius: 15px;
+    padding: 5px;
+    margin: 3px;
+}
+
+.boton-compra:hover {
+    background-color: var(--blue);
+    color: white;
+    border: 2px solid var(--blue);
+    box-shadow: 1px 1px 6px 2px var(--blue);
+}
+
+.fa-whatsapp {
+    font-size: 20px;
+    margin-right: 2px;
+}
+
+/* media queries */
+@media (max-width: 700px) {
+    .navbar {
+        justify-content: center;
+    }
+
+    .contenedor-post {
+        flex-direction: column;
+    }
+
+    .nav-productos {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        position: initial;
+    }
+
+    .nav_link {
+        padding: 20px 20px;
+    }
+
+    .categoria {
+        gap: 6px;
+        margin: 0;
+    }
+
+    .tarjeta {
+        width: 250px;
+    }
+
+    .sidebar {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .nav-productos {
+        padding: 0;
+        border-radius: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cartel p{
+        width: 90%;
+    }
+    .nav_link--select{
+        text-align: center;
+    }
+    .nav-productos {
+        display: flex;
+        flex-direction: column;
+
+        padding: 20px 0px;
+    }
+
+    .nav_link {
+        padding: 12px 20px;
+    }
+
+    .img-arrow {
+        padding-right: 20px;
+    }
+    .content-list{
+        width: 90%;
+        font-size: 18px;
+        text-align: center;
+    }
+}
+@media(min-width: 1350px){
+.cartel{
+    height: 70px;
+}
+
+ }
+@media(min-width: 2000px){
+    /* header  */
+    .navbar{
+        height: 100px;
+    }
+    .nav-link-header{
+        font-size: 40px;
+        margin-right: 40px;
+    }
+    /* navegacion  */
+    .sidebar{
+        width: 700px;
+    }
+    .nav-productos{
+        width: 500px;
+        height: 1000px;
+    }
+    .nav_link--select{
+        font-size: 40px;
+    }
+    .nav_link{
+        font-size: 30px;
+    }
+
+    .cartel p{
+        font-size: 30px;
+    }
+    .cartel p b{
+        font-size: 46x;
+    }
+    .cartel p a {
+        font-size: 46x;
+    }
+    .tarjeta{
+        width: 550px;
+    }
+    .nombre-producto{
+        font-size: 35px;
+    }
+    .rendimiento-producto{
+        font-size: 30px;
+    }
+    .compatibilidad-producto{
+        font-size: 30px;
+    }
+    .precio-producto{
+        font-size: 40px;
+    }
+    .boton-compra{
+        height: 60px;
+        border-radius: 20px;
+        font-size: 40px;
+    }
+    .fa-whatsapp{
+        font-size: 40px;
+    }
+}

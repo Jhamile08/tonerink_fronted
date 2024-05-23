@@ -1,0 +1,835 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+:root {
+    --blue: #03436D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header */
+
+.header {
+    background: #3a7bd5;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3a60737f, #3a7bd592), url(../imgs/impresora222.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3a607352, #29579851), url(../imgs/impresora999.webp);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin-right: 80px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+
+}
+
+.descripcion-tonerink {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 66%;
+}
+.boton-tonerink{
+    margin-bottom: 124px;
+    margin-left: 50px;
+    display: flex;
+    text-decoration: none;
+    padding: 30px;
+    background-color: #03436D;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.boton-tonerink:hover{
+    border: 1px solid rgb(88, 88, 88);
+    box-shadow: 2px 2px 10px 3px #888888d1;
+}
+
+.descripcion-logo {
+    padding-left: 140px;
+
+}
+
+.logo-principal {
+    width: 70%;
+}
+
+.descripcion-parrafo {
+    color: white;
+    font-size: 38px;
+    font-weight: bolder;
+    margin-left: 24px;
+    width: 90%;
+}
+
+.linea-principal {
+    margin: 10px;
+
+}
+
+/* tarjetas */
+
+.contenedor-tarjetas {
+    padding: 45px 0px;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(211, 209, 209);
+    box-shadow: 2px 2px 10px 3px #d2d2d2d1;
+    border-radius: 15px;
+    height: 450px;
+    padding: 10px;
+}
+
+.linea-tarjeta {
+    width: 80%;
+    border: 1px solid black;
+    margin-left: 10%;
+    margin-bottom: 8px;
+}
+
+.contenedor-img-tarjeta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 59%;
+}
+
+.img-tarjeta {
+    width: 400px;
+}
+
+.img-tarjeta-1 {
+    margin-top: 20px;
+    width: 70%;
+    height: 90%;
+}
+
+.img-tarjeta-2 {
+    width: 55%;
+    height: 65%;
+}
+
+.img-tarjeta-3 {
+    width: 58%;
+    height: 66%;
+}
+
+.contenedor-texto-tarjeta {
+    word-wrap: break-word;
+}
+
+.titulo-tarjeta {
+    text-align: center;
+    margin: 0px;
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.texto-tarjeta {
+    padding: 0px 30px;
+    text-align: center;
+    font-size: 20px;
+    word-wrap: break-word;
+
+}
+
+/* swiper-slider */
+
+.slide-contenedor {
+    overflow: initial;
+}
+
+.slide-content {
+    max-width: 1350px;
+    width: 100%;
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+.swiper-button-next {
+    right: -55px;
+}
+
+.swiper-button-prev {
+    left: -55px;
+}
+
+/* main */
+
+.titulo-2 {
+    text-align: center;
+    color: var(--blue);
+    font-weight: 900;
+    font-size: 45px;
+}
+
+#sobre-nosotros {
+    padding: 30px 100px;
+}
+
+/* marcas-distribuidas */
+.imgs-marcas {
+    width: 32%;
+    height: 25%;
+    padding: 20px;
+    border: 2px solid lightgray;
+    box-shadow: 1px 1px 6px 2px #d3d3d3d1;
+}
+
+.imgs-marcas-2 {
+    width: 40%;
+    height: 30%;
+    padding: 20px;
+    border: 2px solid lightgray;
+    box-shadow: 1px 1px 6px 2px #d3d3d3d1;
+}
+
+.imgs-marcas-2-1 {
+    width: 16%;
+    height: 20%;
+    padding: 20px;
+    border: 2px solid lightgray;
+    box-shadow: 1px 1px 6px 2px #d3d3d3d1;
+}
+
+.contenedor-marcas {
+    padding: 80px 100px;
+}
+
+.contenedor1 {
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 80px;
+}
+
+.contenedor2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+
+}
+
+.contenedor1-1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 20%;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor2-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 12%;
+    margin: 0;
+    padding: 0;
+}
+
+/* catalogos */
+
+#sobre-productos {
+    padding: 50px 90px 160px 90px;
+}
+
+.categoria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.sub-categoria {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin-left: 60px;
+}
+
+.img-categoria {
+    width: 25%;
+    height: 40%;
+}
+
+.parrafo-categoria {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin: 8px 0px 15px 0px;
+}
+
+.titulo-categoria {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    color: var(--blue);
+    font-weight: bolder;
+    margin-right: 15px;
+}
+
+.linea-categoria {
+    color: var(--blue);
+    width: 50%;
+}
+
+.link-categoria {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 65px;
+    text-decoration: none;
+    border: 2px solid var(--blue);
+    border-radius: 20px;
+    color: var(--blue);
+    font-weight: bolder;
+
+}
+
+.link-categoria:hover {
+    box-shadow: 1px 1px 6px 2px #969191;
+}
+
+/* footer */
+
+#footer {
+    background-color: var(--blue);
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor-pie {
+    padding: 45px 60px;
+    display: flex;
+    gap: 90px;
+}
+
+.titulo-pie {
+    color: white;
+
+}
+
+
+.enlace-pie {
+    color: white;
+    text-decoration: none;
+    margin: 0;
+}
+
+.enlaces-orden {
+    display: flex;
+    flex-direction: column;
+}
+
+.imgs-pie {
+    width: 30px;
+    height: 30px;
+    color: black;
+}
+
+.fa-envelope:before {
+    font-size: 28px;
+    color: white;
+    margin-right: 8px;
+}
+
+.fa-whatsapp:before {
+    font-size: 30px;
+    color: white;
+    margin-right: 8px;
+}
+
+.fa-phone:before {
+    font-size: 28px;
+    color: white;
+    margin-right: 8px;
+}
+
+.iconos-pie {
+    display: flex;
+    align-items: center;
+}
+
+.parrafos-pie {
+    margin: 5px;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+}
+
+
+
+.sobre-nosotros-footer {
+    width: 55%;
+}
+
+.linea-pie {
+    height: 56px;
+    width: 20px;
+    background-color: white;
+
+}
+@media (max-width: 321px) {
+
+    /* bandeja de entrada */
+    .nav-link {
+        font-size: 15px;
+    }
+
+    /* adaptacion de las tarjetas  */
+    #sobre-nosotros {
+        padding: 10px 60px;
+    }
+
+    .tarjeta {
+        height: 330px;
+    }
+
+    .contenedor-img-tarjeta {
+        height: 200px;
+    }
+
+    .titulo-tarjeta {
+        font-size: 22px;
+    }
+
+    .texto-tarjeta {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    /* bandeja de entrada */
+    .nav-menu {
+        width: 100%;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+    .nav-item{
+        margin: 0px 5px;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .descripcion-tonerink {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 80px;
+    }
+    .boton-tonerink{
+        margin: 0;
+    }
+
+    .descripcion-parrafo{
+        text-align: center;
+        font-size: 35px;
+        margin: 0;
+    }
+    .descripcion-logo {
+        padding: 0;
+        width: 80%;
+    }
+
+    #sobre-nosotros {
+        padding: 70px 60px;
+    }
+
+
+    /* categorias de los productos  */
+    .titulo-2 {
+        font-size: 34px;
+    }
+
+    .categoria {
+        flex-direction: column;
+    }
+
+    .sub-categoria {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .titulo-categoria {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .parrafo-categoria {
+        width: 100%;
+        text-align: center;
+    }
+
+    .linea-categoria {
+        width: 80%;
+
+    }
+
+    .img-categoria {
+        width: 80%;
+        height: 80%;
+    }
+
+    #sobre-productos {
+        padding: 70px 40px;
+    }
+
+ 
+}
+@media (max-width: 899px){
+    .descripcion-tonerink {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .boton-tonerink{
+        margin: 0;
+    }
+    .contenedor-marcas {
+        padding: 20px 20px;
+    }
+
+    .contenedor-marcas {
+        padding: 20px 30px;
+    }
+
+    .contenedor1 {
+        margin: 0;
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+    .contenedor2 {
+        margin: 0;
+        gap: 0;
+        flex-wrap: wrap;
+    }
+
+    .contenedor1-1 {
+        margin: 10px 0;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .contenedor2-1 {
+        margin: 10px 0;
+        gap: 20px;
+        flex-direction: row-reverse;
+    }
+
+    .imgs-marcas {
+        width: 45%;
+    }
+
+    .imgs-marcas-2 {
+        width: 45%;
+    }
+
+    .imgs-marcas-2-1 {
+        width: 45%;
+        margin-top: 15px;
+    }
+    /* categoria  */
+    .img-categoria{
+        width: 60%;
+    }
+    .link-categoria{
+        width: 90%;
+        height: 75px;
+    }
+    
+       /* footer  */
+
+       .contenedor-pie {
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+        padding: 30px 40px;
+    }
+
+    .enlaces-pie {
+        margin: 0;
+    }
+
+    .contacto-pie {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+   .linea-footer{
+    width: 50%;
+   }
+    .sobre-nosotros-footer {
+        margin: 0;
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 900px) {
+    /* marcas  */
+
+    .contenedor-marcas {
+        padding: 30px 30px;
+    }
+
+    .contenedor1 {
+        margin-left: 40px;
+    }
+
+    .contenedor2 {
+        margin: 0;
+        gap: 0;
+    }
+
+    .contenedor1-1 {
+        margin: 10px 0;
+        gap: 12%;
+    }
+
+    .contenedor2-1 {
+        margin: 0;
+        gap: 30px;
+        flex-direction: row-reverse;
+    }
+
+    .imgs-marcas {
+        width: 38%;
+    }
+
+    .imgs-marcas-2 {
+        width: 40%;
+    }
+
+    .imgs-marcas-2-1 {
+        width: 18%;
+    }
+
+    /* footer */
+
+    .contenedor-pie {
+        align-items: center;
+    }
+ 
+}
+
+@media (min-width: 900px) and (max-width: 1400px) {
+
+    /* footer  */
+    .contenedor-pie {
+        padding: 30px 20px;
+        gap: 50px;
+        justify-content: center;
+    }
+
+    .sobre-nosotros-footer {
+        width: 40%;
+    }
+
+}
+
+@media (min-width: 1440px) {
+    /* bandeja de entrada */
+
+    .nav-link {
+        font-size: 28px;
+    }
+
+    /* carrusel  */
+    #sobre-nosotros {
+        padding: 30px 200px;
+    }
+
+    .slide-contenedor {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+
+    }
+
+    .slide-content {
+        max-width: 1600;
+    }
+
+
+    /* marcas  */
+    .contenedor-marcas {
+        padding: 80px 120px;
+    }
+
+    .titulo-2 {
+        font-size: 50px;
+    }
+
+    /* categorias  */
+
+    .img-categoria {
+        width: 27%;
+        height: 40%;
+    }
+
+    .titulo-categoria {
+        font-size: 36px;
+    }
+
+    .parrafo-categoria {
+        font-size: 23px;
+    }
+
+    .link-categoria {
+        font-size: 18px;
+    }
+
+}
+
+@media (min-width: 2540px) {
+
+    /* bandeja de entrada */
+    .nav-link {
+        font-size: 58px;
+    }
+
+    .nav-menu {
+        margin: 25px;
+    }
+
+    .nav-item {
+        margin: 0 25px;
+    }
+
+    .logo-principal {
+        width: 700px;
+    }
+
+    .descripcion-parrafo {
+        font-size: 80px;
+    }
+
+    .titulo-2 {
+        font-size: 80px;
+    }
+
+    /* carrusel  */
+    #sobre-nosotros {
+        padding: 30px 400px;
+    }
+
+    .tarjeta {
+        height: 600px;
+    }
+
+    /* marcas  */
+    .contenedor-marcas {
+        padding: 140px 200px;
+    }
+
+    /* categorias  */
+    .titulo-categoria {
+        font-size: 60px;
+        width: 100%;
+    }
+
+    .parrafo-categoria {
+        font-size: 40px;
+
+    }
+
+    .sub-categoria {
+        width: 40%;
+    }
+
+    .img-categoria {
+        width: 26%;
+        height: 40%;
+    }
+
+    .link-categoria {
+        width: 360px;
+        height: 90px;
+        font-size: 30px;
+    }
+
+    /* footer  */
+
+    .contenedor-pie {
+        justify-content: center;
+        padding: 80px 80px;
+    }
+
+    .titulo-pie {
+        font-size: 50px;
+    }
+
+    .enlace-pie {
+        font-size: 38px;
+    }
+
+    .parrafos-pie {
+        font-size: 38px;
+    }
+
+    .sobre-nosotros-footer {
+        width: 40%;
+    }
+
+}
