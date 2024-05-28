@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/admin.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="containerForms">
+    <div id="containerFormProduct">
+      <form id="formProduct">
+        <input type="hidden" id="productId" />
+        <div class="titleProducts mb-5">
+          <h3>Crear producto</h3>
+        </div>
+        <div class="containerForms1 mb-3">
+          <div class="form-floating">
+            <select id="typeProduct" class="form-control" required>
+              <option value="">Seleccione tipo de producto</option>
+              <option value="CARTUCHO">Cartucho</option>
+              <option value="TONER">Toner</option>
+              <option value="TONER_FOTOCOPIADORA">Toner de fotocopiadora</option>
+              <option value="BOTELLA_TINTA">Botella de tinta</option>
+              <option value="CINTA_IMPRESION">Cinta de impresion</option>
+            </select>
+            <label for="typeProduct">Tipo</label>
+          </div>
+        </div>
+        <div class="containerForms1 mb-3">
+          <div class="form-floating">
+            <input type="text" id="nameProduct" class="form-control" required />
+            <label for="nameProduct">Nombre producto</label>
+          </div>
+          <div class="form-floating">
+            <input type="text" id="imgProduct" class="form-control" required />
+            <label for="imgProduct">URL de la img del producto</label>
+          </div>
+          <div class="form-floating">
+            <input type="text" id="performanceProduct" class="form-control" required />
+            <label for="performanceProduct">Rendimiento del producto</label>
+          </div>
+          <div class="form-floating">
+            <input type="text" id="compabilityProduct" class="form-control" required />
+            <label for="compabilityProduct">Compatibilidad del producto</label>
+          </div>
+          <div class="form-floating">
+            <input type="text" id="priceProduct" class="form-control" required />
+            <label for="performanceProduct">Precio del producto</label>
+          </div>
+        </div>
+        <div class="containerForms1 mb-3 container-brand">
+          <div class="form-floating">
+            <select id="brand" class="form-control" style="width: 310px" required>
+              <option value="">Seleccione marca del producto</option>
+              <option value="BROTHER">Brother</option>
+              <option value="CANON">Canon</option>
+              <option value="EPSON">Epson</option>
+              <option value="HP">Hp</option>
+              <option value="SAMSUNG">Samsung</option>
+              <option value="LEXMARK">Lexmark</option>
+              <option value="RICOH">Ricoh</option>
+              <option value="KYOCERA">Kyocera</option>
+            </select>
+            <label for="type">Marca</label>
+          </div>
+          <div class="form-floating">
+            <select id="quality" class="form-control" style="width: 310px" required>
+              <option value="">Seleccione calidad del producto</option>
+              <option value="ORIGINAL">Original</option>
+              <option value="GENERIC">Generico</option>
+            </select>
+            <label for="type">Calidad</label>
+          </div>
+        </div>
+        <div class="containerForms2 mb-3 button">
+          <button class="btnForm" id="buttonCreateTest">Enviar</button>
+        </div>
+      </form>
+    </div>
+    <div class="general">
+      <h2 class="my-4 text-black">Productos</h2>
+      <div class="productList">
+        <div>
+          <table class="table table-striped product-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>ID</th>
+                <th>Tipo</th>
+                <th>Nombre</th>
+                <th>Marca</th>
+                <th>Precio</th>
+                <th>Rendimiento</th>
+                <th>Compatibilidad</th>
+              </tr>
+            </thead>
+            <tbody id="tbodyProduct"></tbody>
+          </table>
+        </div>
+      </div>
+      <button class="buttonProductAdd btnForm-1">Agregar Producto
+      </button>
+    </div>
+  </div>
+</body>
+<script type="module" src="./js/admin.js"></script>
+</html>
