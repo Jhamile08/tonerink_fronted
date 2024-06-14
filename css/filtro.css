@@ -126,6 +126,7 @@ input[type="radio"] {
     font-weight: bolder;
 }
 
+
 .category {
     display: flex;
     justify-content: center;
@@ -242,8 +243,6 @@ input[type="radio"] {
     padding-left: 20px;
     text-align: left;
 }
-
-
 /* buscador */
 .buscador-section {
     display: flex;
@@ -297,7 +296,6 @@ input[type="radio"] {
 /* tarjeta de productos */
 
 
-
 .container-cards {
     display: flex;
     flex-direction: column;
@@ -330,6 +328,7 @@ input[type="radio"] {
     width: 70%;
     text-align: center;
 }
+
 
 .container-name-product {
     display: flex;

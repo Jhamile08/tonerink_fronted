@@ -1,3 +1,4 @@
+
 import {URL_PRODUCT} from "../apiConnection/URL.js";
 
 // METODO POST - para subir algo al json recibe la url donde se va a subir y la info de lo que se va a subir
@@ -57,6 +58,7 @@ export async function update(product, info) {
       throw new Error("Error al actualizar el producto");
     }
   }
+
 
 // METODO DELETE - REcibe la URL de lo que se va a borrar, concatendad con el id
 export async function deleteHttp(url){
