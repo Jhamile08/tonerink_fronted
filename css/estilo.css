@@ -396,16 +396,16 @@
   
   @keyframes scroll {
     0% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
-    100% {
-      -webkit-transform: translateX(calc(-250px * 14));
-              transform: translateX(calc(-250px * 14));
-    }
+        -webkit-animation: translateX(0);
+        transform: translateX(0);
+      }
+      100% {
+        -webkit-animation: translateX(calc(-150px *9));
+        transform: translateX(calc(-150px *9));
+      }
   }
   .slider {
-    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+    box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.20), 0px 25px 20px -20px rgba(0, 0, 0, 0.20);
     height: 250px;
     margin: auto;
     overflow: hidden;
@@ -434,13 +434,16 @@
     top: 0;
   }
   .slider .slide-track {
-    -webkit-animation: scroll 60s linear infinite;
-            animation: scroll 60s linear infinite;
     display: flex;
-    width: calc(250px * 28); /* Duplicamos el número de slides */
-    gap: 3.4rem;
+    /* La velocidad de la animación */
+    animation: scroll 30s linear infinite;
+    /* Esto es por si algún navegador no reconoce bien la animación */
+    -webkit-animation:  scroll 30s linear infinite;
+    width: calc(250px *100);
   }
   .slider .slide {
+    width: 200px;
+    margin: 2rem;
     height: 200px;
     display: flex;
     justify-content: center;
@@ -451,9 +454,7 @@
   }
   
   .slider .slide img {
-    height: 130px; /* Ajusta la altura de las imágenes según lo necesites */
-    width: auto; /* Mantén el ancho automático para mantener la proporción */
-    border-radius: 1rem;
+    width: 100%; 
   }
 
 
