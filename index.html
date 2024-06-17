@@ -25,13 +25,10 @@
         <nav class="navbar">
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a class="nav-link" href="#sobre-nosotros">Inicio</a>
+                    <a class="nav-link" href="#about-us">Nosotros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#sobre-productos">Productos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#hogares">Hogares</a>
+                    <a class="nav-link" href="#about-products">Categorias</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#footer">Contacto</a>
@@ -54,58 +51,50 @@
         </section>
     </header>
     <main>
-        <section id="sobre-nosotros">
-            <h2 class="titulo-2">Nuestra propuesta de valor</h2>
-
-            <div class="slide-contenedor swiper mySwiper">
-                <div class="slide-content">
-                    <div class="contenedor-tarjetas swiper-wrapper">
-                        <div class="tarjeta swiper-slide">
-                            <div class="contenedor-img-tarjeta"><img class="img-tarjeta-1" src="imgs/icono-envio3.jpg"
-                                    alt=""></div>
-                            <hr class="linea-tarjeta">
-                            <h2 class="titulo-tarjeta">Envíos rápidos</h2>
-                            <p class="texto-tarjeta">Envíos a todo Colombia.</p>
-                        </div>
-                        <div class="tarjeta swiper-slide">
-                            <div class="contenedor-img-tarjeta"><img class="img-tarjeta-2" src="imgs/credito.webp"
-                                    alt=""></div>
-                            <hr class="linea-tarjeta">
-                            <h2 class="titulo-tarjeta">Crédito </h2>
-                            <p class="texto-tarjeta">Posibilidad de crédito para empresas.</p>
-                        </div>
-                        <div class="tarjeta swiper-slide">
-                            <div class="contenedor-img-tarjeta"><img class="img-tarjeta-2"
-                                    src="imgs/icono-garantia.webp" alt=""></div>
-                            <hr class="linea-tarjeta">
-                            <h2 class="titulo-tarjeta">Garantía asegurada</h2>
-                            <p class="texto-tarjeta">Todos nuestros suministros tienen garantía 100%.</p>
-                        </div>
-                        <div class="tarjeta swiper-slide">
-                            <div class="contenedor-img-tarjeta"><img class="img-tarjeta-3" src="imgs/icono-calidad4.png"
-                                    alt=""></div>
-                            <hr class="linea-tarjeta">
-                            <h2 class="titulo-tarjeta">Suministros de calidad</h2>
-                            <p class="texto-tarjeta">Trabajamos con las mejores marcas.</p>
-                        </div>
-                        <div class="tarjeta swiper-slide">
-                            <div class="contenedor-img-tarjeta"><img class="img-tarjeta-2" src="imgs/asesoria.webp"
-                                    alt=""></div>
-                            <hr class="linea-tarjeta">
-                            <div class="contenedor-texto-tarjeta">
-                                <h2 class="titulo-tarjeta">Asesoría personalizada</h2>
-                                <p class="texto-tarjeta">Estaremos al tanto para resolver cualquier duda.</p>
-                            </div>
-                        </div>
-
+        <section id="about-products">
+            <h2 class="titulo-2">Categorías con las que trabajamos</h2>
+            <div class="container-cards">
+                <div class="card">
+                    <img src="./imgs/cartucho-about-product.jpg" class="card-img" alt="">
+                    <div class="card-body">
+                        <h2 class="card-title">Cartuchos</h2>
+                        <p class="card-info">Los cartuchos que manejamos en varias marcas que sirven para
+                            suministrar las impresoras como impresora multifuncional HP, Epson, Lexmark y Brother
+                            Industries..</p>
+                        <a class="card-btn" href="index2.html#cartuchos1" target="_blank">Catalogo cartuchos</a>
                     </div>
                 </div>
-                <div class="swiper-button-next swiper-navBtn"></div>
-                <div class="swiper-button-prev swiper-navBtn"></div>
-                <div class="swiper-pagination"></div>
+                <div class="card">
+                    <img src="./imgs/toner-about-product.jpg" class="card-img" alt="">
+                    <div class="card-body">
+                        <h2 class="card-title">Tóners</h2>
+                        <p class="card-info">Son compuestos un polvo hecho de plásticos granulados esta
+                            almacenado en un solo cartucho, y que permite un mayor grado de control, precisión y
+                            rendimiento de tiempo al momento de imprimir.</p>
+                        <a class="card-btn" href="index2.html#cartuchos1" target="_blank">Catalogo tóner</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./imgs/fotocopiadora-about-products.jpeg" class="card-img" alt="">
+                    <div class="card-body">
+                        <h2 class="card-title">Botellas de tinta</h2>
+                        <p class="card-info">Las Tintas son líquidas, utilizada para escribir o imprimir. Su
+                            funcionamiento principal es la superficie para obtener un texto, imagen o patrón, con un
+                            alto rendimiento.</p>
+                        <a class="card-btn" href="index2.html#cartuchos1" target="_blank">Catalogo botellas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./imgs/suministros-about-products.jpg" class="card-img" alt="">
+                    <div class="card-body">
+                        <h2 class="card-title">Descubre más categorias</h2>
+                        <a class="card-btn" href="index2.html#cartuchos1" target="_blank">Categorias</a>
+                    </div>
+                </div>
+
             </div>
-            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         </section>
+
         <section class="section-brands">
             <div class="slider">
                 <div class="slide-track">
@@ -168,130 +157,57 @@
                 </div>
             </div>
         </section>
-        <!-- <section id="sobre-productos">
-            <h2 class="titulo-2">Categorías con las que trabajamos</h2>
-            <div class="contenedor-sobre-productos">
-                <div class="categoria">
-                    <img class="img-categoria" src="imgs/cartuchos3.jpg" alt="Cartuchos">
-                    <div class="sub-categoria">
-                        <h2 class="titulo-categoria">Cartuchos</h2>
-                        <hr class="linea-categoria">
-                        <p class="parrafo-categoria">Los cartuchos que manejamos en varias marcas que sirven para
-                            suministrar las impresoras como impresora multifuncional HP, Epson, Lexmark y Brother
-                            Industries..</p>
-                        <a class="link-categoria" href="index2.html#cartuchos1" target="_blank">Consultar el catálogo
-                            de cartuchos</a>
+        <section id="about-us">
+            <h2 class="titulo-2">Nuestra propuesta de valor</h2>
+            <div class="slide-contenedor swiper mySwiper">
+                <div class="slide-content">
+                    <div class="contenedor-tarjetas swiper-wrapper">
+                        <div class="tarjeta swiper-slide">
+                            <div class="contenedor-img-tarjeta"><img class="img-tarjeta" src="imgs/icono-envio.png"
+                                    alt=""></div>
+                            <hr class="linea-tarjeta">
+                            <h2 class="titulo-tarjeta">Envíos rápidos</h2>
+                            <p class="texto-tarjeta">Envíos a todo Colombia.</p>
+                        </div>
+                        <div class="tarjeta swiper-slide">
+                            <div class="contenedor-img-tarjeta"><img class="img-tarjeta" src="imgs/png-transparent-credit-card-computer-icons-credit-card-hand-apartment-internet-removebg-preview.png"
+                                    alt=""></div>
+                            <hr class="linea-tarjeta">
+                            <h2 class="titulo-tarjeta">Crédito </h2>
+                            <p class="texto-tarjeta">Posibilidad de crédito para empresas.</p>
+                        </div>
+                        <div class="tarjeta swiper-slide">
+                            <div class="contenedor-img-tarjeta"><img class="img-tarjeta"
+                                    src="imgs/sticker-png-money-back-guarantee-logo-graphy-others-emblem-label-service-logo-removebg-preview.png" alt=""></div>
+                            <hr class="linea-tarjeta">
+                            <h2 class="titulo-tarjeta">Garantía asegurada</h2>
+                            <p class="texto-tarjeta">Todos nuestros suministros tienen garantía 100%.</p>
+                        </div>
+                        <div class="tarjeta swiper-slide">
+                            <div class="contenedor-img-tarjeta"><img class="img-tarjeta" src="imgs/png-transparent-quality-assurance-service-organization-quality-assurance-service-grass-quality-removebg-preview.png"
+                                    alt=""></div>
+                            <hr class="linea-tarjeta">
+                            <h2 class="titulo-tarjeta">Suministros de calidad</h2>
+                            <p class="texto-tarjeta">Trabajamos con las mejores marcas.</p>
+                        </div>
+                        <div class="tarjeta swiper-slide">
+                            <div class="contenedor-img-tarjeta"><img class="img-tarjeta" src="imgs/295-2953917_telemarketing-png-download-call-center-desenho-png-removebg-preview.png"
+                                    alt=""></div>
+                            <hr class="linea-tarjeta">
+                            <div class="contenedor-texto-tarjeta">
+                                <h2 class="titulo-tarjeta">Asesoría personalizada</h2>
+                                <p class="texto-tarjeta">Estaremos al tanto para resolver cualquier duda.</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-                <div class="categoria">
-                    <img class="img-categoria" src="imgs/toner3.jpg" alt="Tóner">
-                    <div class="sub-categoria">
-                        <h2 class="titulo-categoria">Tóner</h2>
-                        <hr class="linea-categoria">
-                        <p class="parrafo-categoria">Los Tóner que manejamos para impresoras LaserJet tanto para
-                            impresoras marcas HP, Samsung y Canon, es un polvo hecho de plásticos granulados que suele
-                            estar almacenado en un solo cartucho, y que permite un mayor grado de control, precisión y
-                            rendimiento de tiempo al momento de imprimir.</p>
-                        <a class="link-categoria" href="./index2.html#toner1" target="_blank">Consultar el catálogo de
-                            Tóner</a>
-                    </div>
-                </div>
-                <div class="categoria">
-                    <img class="img-categoria" src="imgs/tonerparafotocopiadora.png" alt="Tóner para fotocopiadoras">
-                    <div class="sub-categoria">
-                        <h2 class="titulo-categoria">Tóner para fotocopiadoras</h2>
-                        <hr class="linea-categoria">
-                        <p class="parrafo-categoria">Los Tóner que manejamos para impresoras marcas Ricoh y Kyosera, es
-                            un polvo hecho de plásticos granulados que suele estar almacenado en un solo cartucho, y que
-                            permite un mayor grado de control, precisión y rendimiento de tiempo al momento de imprimir.
-                        </p>
-                        <a class="link-categoria" href="./index2.html#toner-para-fotocopiadoras1"
-                            target="_blank">Consultar
-                            el catálogo de Tóner para fotocopiadoras</a>
-                    </div>
-                </div>
-                <div class="categoria">
-                    <img class="img-categoria" src="imgs/botella-tinta-epson-544-original.jpg" alt="Botellas de tintas">
-                    <div class="sub-categoria">
-                        <h2 class="titulo-categoria">Botellas de tintas</h2>
-                        <hr class="linea-categoria">
-                        <p class="parrafo-categoria">Las Tintas son líquidas, utilizada para escribir o imprimir. Su
-                            funcionamiento principal es la superficie para obtener un texto, imagen o patrón, con un
-                            alto rendimiento.</p>
-                        <a class="link-categoria" href="./index2.html#botellas-de-tinta1" target="_blank">Consultar el
-                            catálogo de Botellas de tintas</a>
-                    </div>
-                </div>
-                <div class="categoria">
-                    <img class="img-categoria" src="imgs/cinta-de-impresión.jpg" alt="Cintas de impresión">
-                    <div class="sub-categoria">
-                        <h2 class="titulo-categoria">Cintas de impresión</h2>
-                        <hr class="linea-categoria">
-                        <p class="parrafo-categoria">Se utilizan para imprimir en una etiqueta de papel estucado
-                            diseñada específicamente para la impresión por transferencia térmica. Estas imágenes no son
-                            para una durabilidad duradera, pero permanecen intactas si se encuentran en un entorno
-                            mínimamente abrasivo o químicamente neutro.</p>
-                        <a class="link-categoria" href="./index2.html#cintas-de-impresion1" target="_blank">Consultar el
-                            catálogo de Cintas de impresión</a>
-                    </div>
-                </div>
-                <div class="categoria" id="hogares">
-                    <img class="img-categoria" src="imgs/SUMINISTROS_HP_ORIGINALES.png" alt="Suministros">
-                    <div class="sub-categoria">
-                        <h2 class="titulo-categoria">Para hogares</h2>
-                        <hr class="linea-categoria">
-                        <p class="parrafo-categoria">Manejamos suministros para todo tipo de clientes.</p>
-                        <a class="link-categoria" href="./index2.html#cartuchos-3" target="_blank">Consultar el catálogo
-                            de
-                            hogar</a>
-                    </div>
-                </div>
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
             </div>
-        </section> -->
-        <section id="about-products">
-                <h2 class="titulo-2">Categorías con las que trabajamos</h2>
-                <div class="container-cards">
-                    <div class="card">
-                        <img src="./imgs/cartucho-about-product.jpg" class="card-img" alt="">
-                        <div class="card-body">
-                            <h2 class="card-title">Cartuchos</h2>
-                            <p class="card-info">Los cartuchos que manejamos en varias marcas que sirven para
-                                suministrar las impresoras como impresora multifuncional HP, Epson, Lexmark y Brother
-                                Industries..</p>
-                            <a class="card-btn" href="index2.html#cartuchos1" target="_blank">Catalogo cartuchos</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="./imgs/toner-about-product.jpg" class="card-img" alt="">
-                        <div class="card-body">
-                            <h2 class="card-title">Tóners</h2>
-                            <p class="card-info">Son compuestos un polvo hecho de plásticos granulados esta
-                                almacenado en un solo cartucho, y que permite un mayor grado de control, precisión y
-                                rendimiento de tiempo al momento de imprimir.</p>
-                            <a class="card-btn" href="index2.html#cartuchos1" target="_blank">Catalogo tóner</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="./imgs/fotocopiadora-about-products.jpeg" class="card-img" alt="">
-                        <div class="card-body">
-                            <h2 class="card-title">Botellas de tinta</h2>
-                            <p class="card-info">Las Tintas son líquidas, utilizada para escribir o imprimir. Su
-                                funcionamiento principal es la superficie para obtener un texto, imagen o patrón, con un
-                                alto rendimiento.</p>
-                            <a class="card-btn" href="index2.html#cartuchos1" target="_blank">Catalogo botellas</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="./imgs/suministros-about-products.jpg" class="card-img" alt="">
-                        <div class="card-body">
-                            <h2 class="card-title">Descubre más categorias</h2>
-                            <a class="card-btn" href="index2.html#cartuchos1" target="_blank">Categorias</a>
-                        </div>
-                    </div>
-
-                </div>
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         </section>
-
     </main>
     <footer id="footer">
         <div class="contenedor-pie">
@@ -337,5 +253,6 @@
 <script type="module" src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 <!-- JavaScript -->
 <script type="module" src="js/script.js"></script>
+
 
 </html>
