@@ -156,6 +156,7 @@ renderProducts()
 document.addEventListener("DOMContentLoaded", () => {
     let containerCards = document.querySelectorAll('.container-cards');
     let navLinksInside = document.querySelectorAll('.nav_link--inside');
+    let navLinksGetAll = document.querySelectorAll('.nav_link_all');
     let category = "";
     let dataCategory = "";
 
@@ -164,52 +165,62 @@ document.addEventListener("DOMContentLoaded", () => {
         containerCards = document.querySelectorAll('.container-cards');
         let containerCategory = document.querySelectorAll('.category');
         dataCategory = "";
-        for (let i = 0; i < navLinksInside.length; i++) {
-            navLinksInside[i].addEventListener('click', (event) => {
 
-                 // Obtiene el valor del atributo 'for' del elemento 'label'
-                 category = event.target.getAttribute('for');
-                console.log(navLinksInside.length)
-                if( i == 0+i){
+
+        navLinksGetAll.forEach(all =>{
+            all.addEventListener('click', (event) =>{
+                let nameCategoryAll = event.target.getAttribute('for');
+
                 containerCategory.forEach(general =>{
-                        let generalData = general.getAttribute('data-category')
-                        console.log(generalData.toUpperCase() + category.toUpperCase())
-                        if(generalData.toUpperCase() == category.toUpperCase()){
-                            // let cointainer = document.querySelectorAll(".container-cards")
-                            console.log("coincide todo")
-                           console.log(general)
-                           general.style.display = "flex";
-                        //    cointainer.forEach(x=>{
-                        //     x.style.display = "none"
-                        //    })
-                        }else{
-                            console.log("no coincide")
-                        }
-                    })
-                }else{
+                    let generalData = general.getAttribute('data-category')
+                    console.log(generalData.toUpperCase() + nameCategoryAll.toUpperCase())
 
-                    containerCards.forEach(function (card) {
+                    if(generalData.toUpperCase() == nameCategoryAll.toUpperCase()){
+                        console.log("coincide")
+                     let cointainer = document.querySelectorAll(".container-cards")
+                       cointainer.forEach(x=>{
+                        x.style.display = "flex"
+                       })
+                    }else{
+                        general.style.display = "none";
+                    }
 
-                        dataCategory = card.getAttribute('data-category');
-                        // Agrega un controlador de eventos de clic a cada uno de los elementos seleccionados
-                        console.log(category.toUpperCase() + dataCategory.toUpperCase())
+                })
+
+            })
+        })
+
+        // for (let i = 0; i < navLinksInside.length; i++) {
+        //     navLinksInside[i].addEventListener('click', (event) => {
+
+        //          // Obtiene el valor del atributo 'for' del elemento 'label'
+        //          category = event.target.getAttribute('for');
+                
+
+
+
+        //         //     containerCards.forEach(function (card) {
+
+        //         //         dataCategory = card.getAttribute('data-category');
+        //         //         // Agrega un controlador de eventos de clic a cada uno de los elementos seleccionados
+        //         //         console.log(category.toUpperCase() + dataCategory.toUpperCase())
     
-                        if (category.toUpperCase() == dataCategory.toUpperCase()) {
+        //         //         if (category.toUpperCase() == dataCategory.toUpperCase()) {
                             
-                            card.style.display = "flex";
-                        } else {
-                            card.style.display = "none";
-                            alert("sdsd")
-                        }
+        //         //             card.style.display = "flex";
+        //         //         } else {
+        //         //             card.style.display = "none";
+        //         //             alert("sdsd")
+        //         //         }
     
-                    });
+        //         //     });
 
-                }
+                
                
 
-            });
+        //     });
             
-        }
+        // }
 
     })
 
