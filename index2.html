@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="height: 100%;">
 
 <head>
     <meta charset="UTF-8">
@@ -35,53 +35,6 @@
     </header>
     <div class="contenedor-principal">
         <div class="contenedor-post">
-
-            <input type="radio" id="todos" name="categorias" value="todos" checked>
-            <input type="radio" id="cartuchos" name="categorias" value="cartuchos">
-            <input type="radio" id="cartuchos-hp-original" name="categorias" value="cartuchos-hp-original">
-            <input type="radio" id="cartuchos-hp-generico" name="categorias" value="cartuchos-hp-generico">
-            <input type="radio" id="cartuchos-canon-original" name="categorias" value="cartuchos-canon-original">
-
-            <input type="radio" id="toner" name="categorias" value="toner">
-            <input type="radio" id="toner-hp-original" name="categorias" value="toner-hp-original">
-            <input type="radio" id="toner-hp-generico" name="categorias" value="toner-hp-generico">
-            <input type="radio" id="toner-samsung-original" name="categorias" value="toner-samsung-original">
-            <input type="radio" id="toner-samsung-generico" name="categorias" value="toner-samsung-generico">
-            <input type="radio" id="toner-lexmark-original" name="categorias" value="toner-lexmark-original">
-            <input type="radio" id="toner-lexmark-generico" name="categorias" value="toner-lexmark-generico">
-
-            <input type="radio" id="toner-para-fotocopiadoras" name="categorias" value="toner-para-fotocopiadoras">
-            <input type="radio" id="toner-fotocopiadoras-ricoh-original" name="categorias"
-                value="toner-fotocopiadoras-ricoh-original">
-            <input type="radio" id="toner-fotocopiadoras-ricoh-generico" name="categorias"
-                value="toner-fotocopiadoras-ricoh-generico">
-            <input type="radio" id="toner-fotocopiadoras-kyocera-original" name="categorias"
-                value="toner-fotocopiadoras-kyocera-original">
-            <input type="radio" id="toner-fotocopiadoras-kyocera-generico" name="categorias"
-                value="toner-fotocopiadoras-kyocera-generico">
-
-            <input type="radio" id="botellas-de-tinta" name="categorias" value="botellas-de-tinta">
-            <input type="radio" id="botellas-de-tinta-hp-original" name="categorias"
-                value="botellas-de-tinta-hp-original">
-            <input type="radio" id="botellas-de-tinta-hp-generico" name="categorias"
-                value="botellas-de-tinta-hp-generico">
-            <input type="radio" id="botellas-de-tinta-epson-original" name="categorias"
-                value="botellas-de-tinta-epson-original">
-            <input type="radio" id="botellas-de-tinta-epson-generico" name="categorias"
-                value="botellas-de-tinta-epson-generico">
-            <input type="radio" id="botellas-de-tinta-brother-original" name="categorias"
-                value="botellas-de-tinta-brother-original">
-            <input type="radio" id="botellas-de-tinta-brother-generico" name="categorias"
-                value="botellas-de-tinta-brother-generico">
-            <input type="radio" id="botellas-de-tinta-canon-original" name="categorias"
-                value="botellas-de-tinta-canon-original">
-            <input type="radio" id="botellas-de-tinta-canon-generico" name="categorias"
-                value="botellas-de-tinta-canon-generico">
-
-
-            <input type="radio" id="cintas-de-impresion" name="categorias" value="cintas-de-impresion">
-            <input type="radio" id="cinta-de-impresion-epson-original" name="categorias"
-                value="cinta-de-impresion-epson-original">
             <div class="sidebar">
 
                 <nav class="nav-productos">
@@ -102,13 +55,15 @@
                                 <img src="imgs/arrow.svg" class="img-arrow" alt="arrow">
                             </div>
                             <ul class="sub-lista">
-                                <li><label class="nav_link nav_link--inside" for="cartuchos-hp-original">HP
+                                <li><label class="nav_link nav_link--inside" for="CARTUCHO-TODOS">Todos</label>
+                                </li>
+                                <li><label class="nav_link nav_link--inside" for="CARTUCHO-HP-ORIGINAL">HP
                                         Original</label>
                                 </li>
-                                <li><label class="nav_link nav_link--inside" for="cartuchos-hp-generico">HP
+                                <li><label class="nav_link nav_link--inside" for="CARTUCHO-HP-GENERICO">HP
                                         Genérico</label>
                                 </li>
-                                <li><label class="nav_link nav_link--inside" for="cartuchos-canon-original">Canon
+                                <li><label class="nav_link nav_link--inside" for="CARTUCHO-CANON-ORIGINAL">Canon
                                         Original</label></li>
 
                             </ul>
@@ -119,10 +74,12 @@
                                 <img src="imgs/arrow.svg" class="img-arrow" alt="arrow">
                             </div>
                             <ul class="sub-lista">
+                                <li><label class="nav_link nav_link--inside" for="toner-todos">Todos</label>
+                                </li>
                                 <li><label class="nav_link nav_link--inside" for="toner-hp-original">HP
                                         Original</label>
                                 </li>
-                                <li><label class="nav_link nav_link--inside" for="toner-hp-generico">HP
+                                <li><label class="nav_link nav_link--inside" for="toner-hp-generic">HP
                                         Genérico</label>
                                 </li>
                                 <li><label class="nav_link nav_link--inside" for="toner-samsung-original">Samsung
@@ -140,16 +97,18 @@
                                 <img src="imgs/arrow.svg" class="img-arrow" alt="arrow">
                             </div>
                             <ul class="sub-lista">
+                                <li><label class="nav_link nav_link--inside" for="TONER_fOTOCOPIADORA-TODOS">Todos</label>
+                                </li>
                                 <li><label class="nav_link nav_link--inside"
-                                        for="toner-fotocopiadoras-ricoh-original">Ricoh
+                                        for="TONER_FOTOCOPIADORA-RICOH-ORIGINAL">Ricoh
                                         Original</label></li>
                                 <li><label class="nav_link nav_link--inside"
-                                        for="toner-fotocopiadoras-ricoh-generico">Ricoh
+                                        for="TONER_FOTOCOPIADORA-RICOH-GENERIC">Ricoh
                                         Genérico</label></li>
                                 <li><label class="nav_link nav_link--inside"
-                                        for="toner-fotocopiadoras-kyocera-original">kyocera Original</label></li>
+                                        for="TONER_FOTOCOPIADORA-KYOCERA-ORIGINAL">kyocera Original</label></li>
                                 <li><label class="nav_link nav_link--inside"
-                                        for="toner-fotocopiadoras-kyocera-generico">kyocera Genérico</label></li>
+                                        for="TONER_FOTOCOPIADORA-KYOCERA-GENERIC">kyocera Genérico</label></li>
                             </ul>
                         </li>
 
@@ -159,25 +118,27 @@
                                 <img src="imgs/arrow.svg" class="img-arrow" alt="arrow">
                             </div>
                             <ul class="sub-lista">
-                                <li><label class="nav_link nav_link--inside" for="botellas-de-tinta-hp-original">HP
+                                <li><label class="nav_link nav_link--inside" for="BOTELLA_TINTA-TODOS">Todos</label>
+                                </li>
+                                <li><label class="nav_link nav_link--inside" for="BOTELLA_TINTA-HP-ORIGINAL">HP
                                         Original</label></li>
-                                <li><label class="nav_link nav_link--inside" for="botellas-de-tinta-hp-generico">HP
+                                <li><label class="nav_link nav_link--inside" for="BOTELLA_TINTA-HP-GENERIC">HP
                                         Genérico</label></li>
                                 <li><label class="nav_link nav_link--inside"
-                                        for="botellas-de-tinta-epson-original">Epson
+                                        for="BOTELLA_TINTA-EPSON-ORIGINAL">Epson
                                         Original</label></li>
                                 <li><label class="nav_link nav_link--inside"
-                                        for="botellas-de-tinta-epson-generico">Epson
+                                        for="BOTELLA_TINTA-EPSON-GENERIC">Epson
                                         Genérico</label></li>
                                 <li><label class="nav_link nav_link--inside"
-                                        for="botellas-de-tinta-brother-original">Brother Original</label></li>
+                                        for="BOTELLA_TINTA-BROTHER-ORIGINAL">Brother Original</label></li>
                                 <li><label class="nav_link nav_link--inside"
-                                        for="botellas-de-tinta-brother-generico">Brother Genérico</label></li>
+                                        for="BOTELLA_TINTA-BROTHER-GENERIC">Brother Genérico</label></li>
                                 <li><label class="nav_link nav_link--inside"
-                                        for="botellas-de-tinta-canon-original">Canon
+                                        for="BOTELLA_TINTA-CANON-ORIGINAL">Canon
                                         Original</label></li>
                                 <li><label class="nav_link nav_link--inside"
-                                        for="botellas-de-tinta-canon-generico">Canon
+                                        for="BOTELLA_TINTA-CANON-GENERIC">Canon
                                         Genérico</label></li>
                             </ul>
                         </li>
@@ -187,13 +148,15 @@
                                 <img src="imgs/arrow.svg" class="img-arrow" alt="arrow">
                             </div>
                             <ul class="sub-lista">
+                                <li><label class="nav_link nav_link--inside" for="CINTAS-TODOS">Todos</label>
+                                </li>
                                 <li><label class="nav_link nav_link--inside"
-                                        for="cinta-de-impresion-epson-original">Epson
+                                        for="CINTA_IMPRESION-EPSON-ORIGINAL">Epson
                                         Original</label>
                                 </li>
                             </ul>
                         </li>
-                        
+
                     </ul>
                     <p class="content-list">*Empresa con facturación electrónica y hogar sin factura electrónica</p>
                 </nav>
@@ -212,15 +175,14 @@
                         </button>
                     </div>
                 </div>
-                <div class="category" id="cartuchos" data-category="cartuchos">
+                <div class="category" id="cartuchos" data-category="CARTUCHO-TODOS">
                 </div>
-                <div class="category" id="toner" data-category="toner">
+                <div class="category" id="toner" data-category="TONER-TODOS">
                 </div>
             </section>
         </div>
     </div>
-<script type="module" src="./js/script.js"></script>
-<script type="module" src="./js/filtro.js"></script>
+    <script type="module" src="./js/filtro.js"></script>
 </body>
 
 </html>

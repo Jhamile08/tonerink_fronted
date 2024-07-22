@@ -14,6 +14,7 @@
 body {
     background: #EAEBEF;
     width: 100%;
+    height: 100%;
 }
 
 /* sistema de filtrado*/
@@ -71,6 +72,7 @@ header {
     gap: 10px;
     padding: 15px;
     list-style: none;
+    height: 111;
 }
 
 .sidebar {
@@ -141,15 +143,15 @@ input[type="radio"] {
 
 .contenedor-principal {
     width: 100%;
+    height: 100%;
 }
 
 .nav-productos {
-    position: fixed;
-
     background: #FFF;
     border-radius: 0 16px 16px 0;
     padding: 20px 40px;
     width: 300px;
+    position: static;
 }
 
 .contenedor-lista {
