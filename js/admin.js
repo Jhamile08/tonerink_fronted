@@ -42,7 +42,6 @@ async function renderProducts() {
             <td>${product.typeProduct}</td>
             <td>${product.nameProduct}</td>
             <td>${product.brandProduct} ${product.qualityProduct}</td>
-            <td>${product.priceProduct}</td>
             <td>${product.performanceProduct}</td>
             <td>${product.compatibilityProduct}</td>
             <td>
@@ -62,7 +61,6 @@ async function createProduct(token) {
   const compatibilityProduct = document.getElementById("compabilityProduct").value;
   const brandProduct = document.getElementById("brand").value;
   const qualityProduct = document.getElementById("quality").value;
-  const priceProduct = document.getElementById("priceProduct").value;
   const productId = document.getElementById("productId").value;
 
   const newProduct = {
@@ -74,7 +72,6 @@ async function createProduct(token) {
     nameProduct: nameProduct,
     performanceProduct: performanceProduct,
     compatibilityProduct: compatibilityProduct,
-    priceProduct: priceProduct,
   };
 
   if (productId) {
@@ -174,37 +171,3 @@ async function fillProduct(id) {
 
   renderProducts();
   
-  // jwt
-
-
-// document.addEventListener('DOMContentLoaded', () => {
-//   const token = localStorage.getItem('token');
-//   const protectedContent = document.getElementById('containerForms');
-//   const loginAlert = document.getElementById('login-alert');
-
-//   console.log(token)
-//   protectedFunction1(token)
-// });
-
-// // Función protegida 1 que recibe el token
-
-
-// // Función protegida 2 que recibe el token
-// function protectedFunction2(token) {
-//     fetch('https://example.com/another-protected-endpoint', {
-//         method: 'POST',
-//         headers: {
-//             'Content-Type': 'application/json',
-//             'Authorization': 'Bearer ' + token,
-//         },
-//         body: JSON.stringify({ key: 'value' }),
-//     })
-//     .then(response => response.json())
-//     .then(data => {
-//         console.log('Protected data from function 2:', data);
-//         // Manejar los datos protegidos
-//     })
-//     .catch(error => {
-//         console.error('Error en protectedFunction2:', error);
-//     });
-// }

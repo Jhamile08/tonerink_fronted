@@ -230,6 +230,8 @@ input[type="radio"] {
     text-decoration: none;
     cursor: pointer;
     width: 90%;
+    padding-left: 20px;
+    text-align: left;
 
 }
 
@@ -241,10 +243,7 @@ input[type="radio"] {
     margin-top: 20px;
 }
 
-.nav_link--inside {
-    padding-left: 20px;
-    text-align: left;
-}
+
 /* buscador */
 .buscador-section {
     display: flex;
