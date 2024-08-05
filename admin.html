@@ -9,6 +9,7 @@
 </head>
 
 <body>
+  <div id="login-alert" class="alert">Invalid credentials. Please try again.</div>
   <div class="containerForms">
     <div id="containerFormProduct">
       <form id="formProduct">
@@ -45,10 +46,6 @@
           <div class="form-floating">
             <input type="text" id="compabilityProduct" class="form-control" required />
             <label for="compabilityProduct">Compatibilidad del producto</label>
-          </div>
-          <div class="form-floating">
-            <input type="text" id="priceProduct" class="form-control" required />
-            <label for="performanceProduct">Precio del producto</label>
           </div>
         </div>
         <div class="containerForms1 mb-3 container-brand">
@@ -92,7 +89,6 @@
                 <th>Tipo</th>
                 <th>Nombre</th>
                 <th>Marca</th>
-                <th>Precio</th>
                 <th>Rendimiento</th>
                 <th>Compatibilidad</th>
               </tr>
@@ -107,4 +103,5 @@
   </div>
 </body>
 <script type="module" src="./js/admin.js"></script>
+
 </html>
