@@ -1,5 +1,5 @@
 
-export const URL_BASE = "http://localhost:8080";
+export const URL_BASE = "https://api.tonerinksas.com";
 export const URL_PRODUCT =  `${URL_BASE}/product`;
 export const URL_PRODUCT_GET =  `${URL_BASE}/product/get`;
 export const URL_PRODUCT_DELETE =  `${URL_BASE}/product/delete`;
