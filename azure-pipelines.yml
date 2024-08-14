@@ -1,0 +1,39 @@
+trigger:
+  - main
+
+pool: 'vmsct-beunik-ubuntu-agents'
+stages:
+  - stage: Build
+    jobs:
+      - job: build
+        steps:
+          - task: Docker@2
+            displayName: 'Compile and Publish Image'
+            inputs:
+              containerRegistry: acr-beunik-production
+              command: 'buildAndPush'
+              Dockerfile: Dockerfile
+              repository: tonerink/ui
+              tags: $(Build.BuildNumber)
+
+  - stage: Deploy_To_Prod
+    dependsOn: ["Build"]
+    jobs:
+      - deployment: deploy_ui
+        environment: beunik-production
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                - checkout: self
+                - task: Kubernetes@1
+                  inputs:
+                    connectionType: 'Kubernetes Service Connection'
+                    kubernetesServiceEndpoint: 'production-svcs-aks-connection'
+                    command: 'login'
+
+                - task: HelmInstaller@1
+                - script: |
+                    helm upgrade -i tonerink-ui ./helm -f ./helm/values.yaml --set namespace=production \
+                    --set image=crbeunik.azurecr.io/tonerink/ui:$(Build.BuildNumber) --wait
+                  displayName: 'Deploy'

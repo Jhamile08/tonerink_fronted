@@ -1,0 +1,5 @@
+namespace: production
+image: crbeunik.azurecr.io/tonerink/ui:remoteDebug
+serviceName: tonerink-ui
+domain: tonerinksas.com
+serverPort: "80"
