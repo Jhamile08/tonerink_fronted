@@ -12,7 +12,7 @@ spec:
   tls:
     - hosts:
         - {{ .Values.domain }}
-      secretName: ingress-tls-beunik-v1
+      secretName: ingress-tls-tonerink-v1
   rules:
     - host: {{ .Values.domain }}
       http:
