@@ -94,7 +94,7 @@
 
 .descripcion-parrafo {
     color: white;
-    font-size: 38px;
+    font-size: 30px;
     font-weight: bolder;
     margin-left: 24px;
     width: 90%;
@@ -175,7 +175,7 @@
 .slide-content {
     max-width: 1350px;
     width: 100%;
-    padding: 40px 0;
+    padding: 10px 0;
     overflow: hidden;
 }
 
@@ -193,7 +193,7 @@
     text-align: center;
     color: var(--blue);
     font-weight: 900;
-    font-size: 45px;
+    font-size: 38px;
 }
 
 #about-us {
@@ -212,7 +212,6 @@
     align-items: center;
     flex-direction: column;
     height: 100%;
-    gap: 3rem;
     padding: 6rem 0rem;
 }
 
@@ -220,19 +219,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2.2rem;
+    gap: 2.5rem 2.5rem;
     flex-wrap: wrap;
 
 }
+
 .card{
-    width: 23rem;
-    height: 30rem;
+    width: 38%;
+    height: 15rem;
     border-radius: 20px;
     overflow: hidden; 
     transition: all ease 0.3s;
     position: relative;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 
+}
+.card-1{
+    width: 80%;
+    
 }
 .card:hover{
     
@@ -257,40 +261,37 @@
     backdrop-filter: blur(5px);
     border-radius: 10px;
     color: #fff;
-    padding: 20px;
+    padding: 8%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     transition: 1.5s;
+    overflow-y: hidden;
 }
 .card:hover .card-body{
     right: 0;
 }
 .card-title{
     text-transform: uppercase;
-    font-size: 38px;
+    font-size: 30px;
     font-weight: 500;
 }
 .card-info{
-    font-size: 26px;
+    font-size: 20px;
     line-height: 25px;
-    margin: 25px 0;
+    margin: 3px 0;
     font-weight: 400;
 }
 .card-btn{
-    text-align: center;
+    text-align: start;
     font-size: 20px;
-    color: var(--blue);
-    background-color: #cbdee9;
-    padding: 10px 20px;
-    width: 100%;
-    border-radius: 5px;
     text-transform: capitalize;
     border: none;
     outline: none;
-    font-weight: 500;
+    font-weight: bolder;
     text-decoration: none;
     cursor: pointer;
+    color:#3a7bd5;
 }
 
 /* footer */
@@ -398,7 +399,7 @@
   }
   .slider {
     box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.20), 0px 25px 20px -20px rgba(0, 0, 0, 0.20);
-    height: 250px;
+    height: 150px;
     margin: auto;
     overflow: hidden;
     position: relative;
