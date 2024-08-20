@@ -208,7 +208,7 @@
     align-items: center;
     flex-direction: column;
     height: 100%;
-    padding: 3rem 0rem;
+    padding: 4.5rem 0rem;
 }
 
 .container-cards{
@@ -716,7 +716,7 @@
     .contenedor-pie {
         align-items: center;
     }
-    
+
     .descripcion-logo{
         margin-left: 40px;
         margin-bottom: 40px;
