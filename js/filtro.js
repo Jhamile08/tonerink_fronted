@@ -81,7 +81,11 @@ async function renderProducts() {
 
     let containers = {
         "CARTUCHO": document.querySelector("#cartuchos"),
-        "TONER": document.querySelector("#toner")
+        "TONER": document.querySelector("#toner"),
+        "TONER_FOTOCOPIADORA": document.querySelector("#toner_fotocopiadora"),
+        "BOTELLA_TINTA": document.querySelector("#botella_tinta"),
+        "CINTA_IMPRESION": document.querySelector("#cintas"),
+
     }
     containerProducts.innerHTML = "";
     products.content.forEach(product => {
@@ -120,7 +124,6 @@ renderProducts()
 
 document.addEventListener("DOMContentLoaded", () => {
     let containerCards = document.querySelectorAll('.container-cards');
-    let containerCategory = document.querySelectorAll('.category');
     let navLinksInside = document.querySelectorAll('.nav_link--inside');
     let navLinkAll = document.querySelectorAll('.nav_link_all');
     let all = document.querySelector('.all');
