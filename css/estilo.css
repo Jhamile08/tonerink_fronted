@@ -83,10 +83,6 @@
     box-shadow: 2px 2px 10px 3px #888888d1;
 }
 
-.descripcion-logo {
-    padding-left: 140px;
-
-}
 
 .logo-principal {
     width: 70%;
@@ -720,6 +716,11 @@
     .contenedor-pie {
         align-items: center;
     }
+    
+    .descripcion-logo{
+        margin-left: 40px;
+        margin-bottom: 40px;
+    }
  
 }
 
@@ -736,6 +737,8 @@
     .sobre-nosotros-footer {
         width: 40%;
     }
+
+
 
 }
 
