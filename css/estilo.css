@@ -219,14 +219,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2.5rem 2.5rem;
+    gap: 2rem 2rem;
     flex-wrap: wrap;
 
 }
 
 .card{
     width: 38%;
-    height: 14rem;
+    height: 12rem;
     border-radius: 20px;
     overflow: hidden; 
     transition: all ease 0.3s;
