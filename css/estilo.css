@@ -117,7 +117,7 @@
     border: 2px solid rgb(211, 209, 209);
     box-shadow: 2px 2px 10px 3px #d2d2d2d1;
     border-radius: 15px;
-    height: 450px;
+    height: 400px;
     padding: 10px;
 }
 
@@ -159,7 +159,7 @@
 }
 
 .texto-tarjeta {
-    padding: 0px 30px;
+    padding: 0px 20px;
     text-align: center;
     font-size: 20px;
     word-wrap: break-word;
