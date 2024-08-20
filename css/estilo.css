@@ -193,7 +193,7 @@
     text-align: center;
     color: var(--blue);
     font-weight: 900;
-    font-size: 38px;
+    font-size: 35px;
 }
 
 #about-us {
@@ -212,7 +212,7 @@
     align-items: center;
     flex-direction: column;
     height: 100%;
-    padding: 6rem 0rem;
+    padding: 3rem 0rem;
 }
 
 .container-cards{
@@ -226,7 +226,7 @@
 
 .card{
     width: 38%;
-    height: 15rem;
+    height: 14rem;
     border-radius: 20px;
     overflow: hidden; 
     transition: all ease 0.3s;
@@ -732,59 +732,7 @@
 
 }
 
-@media (min-width: 1440px) {
-    /* bandeja de entrada */
 
-    .nav-link {
-        font-size: 28px;
-    }
-
-    /* carrusel  */
-    #sobre-nosotros {
-        padding: 30px 200px;
-    }
-
-    .slide-contenedor {
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-
-    }
-
-    .slide-content {
-        max-width: 1600;
-    }
-
-
-    /* marcas  */
-    .contenedor-marcas {
-        padding: 80px 120px;
-    }
-
-    .titulo-2 {
-        font-size: 50px;
-    }
-
-    /* categorias  */
-
-    .img-categoria {
-        width: 27%;
-        height: 40%;
-    }
-
-    .titulo-categoria {
-        font-size: 36px;
-    }
-
-    .parrafo-categoria {
-        font-size: 23px;
-    }
-
-    .link-categoria {
-        font-size: 18px;
-    }
-
-}
 
 @media (min-width: 2540px) {
 
