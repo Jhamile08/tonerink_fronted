@@ -515,7 +515,7 @@
     .descripcion-tonerink {
         flex-direction: column;
         align-items: center;
-        margin-top: 30px;
+        margin-top: -25px;
     }
     .boton-tonerink{
         margin: 0;
