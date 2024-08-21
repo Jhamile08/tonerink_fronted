@@ -736,7 +736,31 @@
 
 
 }
+@media (min-width: 1540px){
+    #about-us {
+        padding: 5rem 13rem;
+    }
+    
+}
+@media (min-width: 1800px){
+    #about-us {
+        padding: 5rem 20rem;
+    }
+    
+}
+@media (min-width: 2000px){
+    #about-us {
+        padding: 5rem 28rem;
+    }
+    
+}
 
+@media (min-width: 2300px){
+    #about-us {
+        padding: 5rem 35rem;
+    }
+    
+}
 
 
 @media (min-width: 2540px) {
@@ -828,6 +852,9 @@
 
     .sobre-nosotros-footer {
         width: 40%;
+    }
+    #about-us {
+        padding: 5rem 42rem;
     }
 
 }
