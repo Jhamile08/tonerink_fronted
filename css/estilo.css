@@ -193,7 +193,7 @@
 }
 
 #about-us {
-    padding: 5rem 10rem;
+    padding: 5rem 7rem;
 }
 
 
@@ -222,7 +222,7 @@
 
 .card{
     width: 38%;
-    height: 14rem;
+    height: 13.5rem;
     border-radius: 20px;
     overflow: hidden; 
     transition: all ease 0.3s;
@@ -299,9 +299,11 @@
 }
 
 .contenedor-pie {
-    padding: 45px 60px;
-    display: flex;
+    padding: 55px 60px;
     gap: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .titulo-pie {
