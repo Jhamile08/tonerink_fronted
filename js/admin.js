@@ -1,4 +1,4 @@
-import { URL_PRODUCT,URL_PRODUCT_GET,URL_PRODUCT_DELETE} from "../apiConnection/URL.js";
+import { URL_PRODUCT,URL_PRODUCT_GET,URL_PRODUCT_DELETE,URL_PRODUCT_CREATE} from "../apiConnection/URL.js";
 import {get, post, update, deleteHttp} from "../apiConnection/apiConnection.js";
 
 
@@ -142,7 +142,6 @@ async function fillProduct(id) {
   document.getElementById('imgProduct').value = product.imgProduct;
   document.getElementById('performanceProduct').value = product.performanceProduct;
   document.getElementById('compabilityProduct').value = product.compatibilityProduct;
-  document.getElementById('priceProduct').value = product.priceProduct;
   document.getElementById('brand').value = product.brandProduct;
   document.getElementById('quality').value = product.qualityProduct;
 

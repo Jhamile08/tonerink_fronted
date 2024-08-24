@@ -1,9 +1,9 @@
 
-import {URL_PRODUCT} from "../apiConnection/URL.js";
+import {URL_PRODUCT, URL_PRODUCT_CREATE} from "../apiConnection/URL.js";
 
 // METODO POST - para subir algo al json recibe la url donde se va a subir y la info de lo que se va a subir
 export async function post(info, token) {
-  const response = await fetch(URL_PRODUCT, {
+  const response = await fetch(URL_PRODUCT_CREATE, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
