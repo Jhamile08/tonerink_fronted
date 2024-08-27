@@ -1,5 +1,5 @@
 
-export const URL_BASE = "https://api.tonerinksas.com";
+export const URL_BASE = "https://tonerinksas.com";
 export const URL_PRODUCT =  `${URL_BASE}/product`;
 export const URL_PRODUCT_CREATE =  `${URL_BASE}/product/add`;
 export const URL_PRODUCT_GET =  `${URL_BASE}/product/get`;

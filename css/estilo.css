@@ -493,6 +493,9 @@
 @media (max-width: 500px) {
 
     /* bandeja de entrada */
+    .card-info{
+        display: none;
+    }
     .nav-menu {
         width: 100%;
         margin: 0;
