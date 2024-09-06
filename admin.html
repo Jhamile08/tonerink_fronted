@@ -78,7 +78,12 @@
       </form>
     </div>
     <div class="general">
-      <h2 class="my-4 text-black">Productos</h2>
+      <h2 class="my-1 text-black">Productos</h2>
+      <div class="buscador-section">
+          <input type="text" id="input" class="search" onkeyup="filterName()">
+          <div class="contenedor1-buscador">
+          </div>
+      </div>
       <div class="productList">
         <div>
           <table class="table table-striped product-table">
@@ -103,5 +108,6 @@
   </div>
 </body>
 <script type="module" src="./js/admin.js"></script>
+<script type="module" src="./js/filtro.js"></script>
 
 </html>
