@@ -1,0 +1,63 @@
+:root {
+  --blue: #03436d;
+  --blue-light: #3a7bd5;
+  --gray-bg: #eaebef;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+}
+
+a {
+  color: inherit;
+}
+
+/*
+ * Carrusel infinito de marcas. Tamagui maneja el layout; la animación vive
+ * aquí porque es un desplazamiento continuo con `@keyframes`, no una
+ * transición entre estados.
+ */
+@keyframes tonerink-marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    /* La pista se renderiza duplicada, así que recorre exactamente la mitad. */
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.brands-track {
+  animation: tonerink-marquee 30s linear infinite;
+  will-change: transform;
+}
+
+.brands-marquee:hover .brands-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brands-track {
+    animation: none;
+  }
+}
+
+/* La ola blanca que separa el header del contenido. */
+.hero-wave svg {
+  display: block;
+  width: 100%;
+  height: 150px;
+}

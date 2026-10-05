@@ -1,0 +1,8 @@
+allowBuilds:
+  esbuild: true
+
+# El compilador de Tamagui genera .tamagui/tamagui.config.mjs y lo importa
+# desde la raíz del proyecto, así que sus paquetes deben quedar visibles ahí.
+publicHoistPattern:
+  - "@tamagui/*"
+  - "react-native-web"
