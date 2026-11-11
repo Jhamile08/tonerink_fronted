@@ -17,8 +17,10 @@ pnpm dev        # http://localhost:5173
 
 La API (`https://api.tonerinksas.com`) no habilita CORS para `localhost`, así que
 en desarrollo las peticiones salen por el proxy `/api` que define `vite.config.ts`.
-En producción se llama a la API directamente. Para apuntar a otro backend, copia
-`.env.example` a `.env` y define `VITE_API_BASE`.
+En producción nginx también sirve `/api`, reenviando las solicitudes al backend
+sin el prefijo. Así se evita depender de CORS para cada dominio del sitio.
+Para apuntar a otro backend, copia `.env.example` a `.env` y define
+`VITE_API_BASE` antes de compilar; una URL externa requiere CORS en ese backend.
 
 ## Scripts
 
@@ -56,7 +58,8 @@ public/imgs/    imágenes del sitio
 
 ## Despliegue
 
-`Dockerfile` compila el proyecto y sirve `dist/` con nginx, que redirige
+`Dockerfile` compila el proyecto y sirve `dist/` con nginx, que reenvía `/api/`
+a `https://api.tonerinksas.com/` y redirige
 cualquier ruta desconocida a `index.html` para que React Router la resuelva.
 
 ```bash

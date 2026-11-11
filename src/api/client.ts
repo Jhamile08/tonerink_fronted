@@ -24,9 +24,7 @@ async function request<T>(url: string, init?: RequestInit): Promise<T> {
 }
 
 export async function getProducts(): Promise<Product[]> {
-  const page = await request<ProductPage>(`${URL_PRODUCT_GET}?size=${PAGE_SIZE}`, {
-    headers: { 'Content-Type': 'application/json' },
-  })
+  const page = await request<ProductPage>(`${URL_PRODUCT_GET}?size=${PAGE_SIZE}`)
 
   const content = page.content ?? []
   if (page.totalElements > content.length) {
