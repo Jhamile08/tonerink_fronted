@@ -31,7 +31,7 @@ const TABLE_MIN_WIDTH = COLUMNS.reduce((total, column) => total + column.width, 
 export default function Admin() {
   const navigate = useNavigate()
   const { token, signOut } = useAuth()
-  const { products, loading, error, reload } = useProducts()
+  const { products, loading, error, reload } = useProducts({ fallback: false })
   const [view, setView] = useState<View>({ mode: 'list' })
   const [query, setQuery] = useState('')
   const [submitting, setSubmitting] = useState(false)

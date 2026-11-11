@@ -4,7 +4,7 @@ import { useProducts } from '../hooks/useProducts'
 import { whatsappLink } from '../types/product'
 
 export function FeaturedProducts() {
-  const { products, loading, error, reload } = useProducts()
+  const { products, isDemo, loading, error, reload } = useProducts()
   const [failedImages, setFailedImages] = useState<Set<number>>(() => new Set())
   // Reemplazar el primer producto y descartar imágenes ausentes o que fallen al cargar.
   const candidates = products.slice(1).filter(product => product.imgProduct?.trim() && !failedImages.has(product.id))
@@ -20,6 +20,7 @@ export function FeaturedProducts() {
   return <section className="featured-section" aria-labelledby="featured-title">
     <div className="section-heading"><h2 id="featured-title">Productos destacados</h2>
       <p>Suministros para tu oficina o empresa, de las marcas que conoces.</p></div>
+    {isDemo && !loading && <p className="products-status" role="status">Catálogo de ejemplo: conexión no disponible. <button className="catalog-button" onClick={reload}>Reintentar conexión</button></p>}
     {loading ? <p className="products-status" role="status">Cargando productos…</p>
       : error ? <div className="products-status" role="alert"><p>{error}</p><button className="catalog-button" onClick={reload}>Reintentar</button></div>
       : featured.length === 0 ? <p className="products-status">Pronto encontrarás más productos aquí. Contáctanos para asesorarte.</p>

@@ -23,8 +23,8 @@ async function request<T>(url: string, init?: RequestInit): Promise<T> {
   return (body ? JSON.parse(body) : undefined) as T
 }
 
-export async function getProducts(): Promise<Product[]> {
-  const page = await request<ProductPage>(`${URL_PRODUCT_GET}?size=${PAGE_SIZE}`)
+export async function getProducts(signal?: AbortSignal): Promise<Product[]> {
+  const page = await request<ProductPage>(`${URL_PRODUCT_GET}?size=${PAGE_SIZE}`, { signal })
 
   const content = page.content ?? []
   if (page.totalElements > content.length) {

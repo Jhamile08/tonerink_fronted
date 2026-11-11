@@ -46,7 +46,7 @@ function matchesQuery(product: Product, query: string): boolean {
 
 export default function Catalog() {
   const [searchParams] = useSearchParams()
-  const { products, loading, error } = useProducts()
+  const { products, isDemo, loading, error, reload } = useProducts()
   const [filter, setFilter] = useState<CatalogFilter>(ALL_FILTER)
   const [query, setQuery] = useState('')
 
@@ -102,6 +102,7 @@ export default function Catalog() {
             <SearchBar value={query} onChange={setQuery} />
           </XStack>
 
+          {isDemo && !loading && <Muted role="status">Catálogo de ejemplo: conexión no disponible. <button onClick={reload}>Reintentar conexión</button></Muted>}
           {loading ? (
             <YStack paddingVertical="$8" gap="$3" alignItems="center">
               <Spinner size="large" color={brand.blue} />
