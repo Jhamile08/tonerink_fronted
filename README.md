@@ -58,6 +58,25 @@ public/imgs/    imágenes del sitio
 
 ## Despliegue
 
+### Render (Static Site)
+
+`render.yaml` define el sitio estático y las reglas de reescritura. Para un sitio
+existente creado desde el dashboard, añadir estas reglas en **Redirects/Rewrites**,
+en este orden (subir el archivo no modifica automáticamente un sitio que no esté
+gestionado mediante Blueprint):
+
+| Source | Destination | Action |
+| ------ | ----------- | ------ |
+| `/api/*` | `https://api.tonerinksas.com/*` | Rewrite |
+| `/*` | `/index.html` | Rewrite |
+
+La regla de API debe ir antes de la de React. Sin ella, `/api/product/get` devuelve
+HTML en lugar de JSON. Dejar `VITE_API_BASE` sin definir para usar `/api`.
+El build es `pnpm install --frozen-lockfile && pnpm build` y el directorio publicado
+es `dist`. nginx solo se ejecuta con el despliegue Docker descrito a continuación.
+
+### Docker / Kubernetes
+
 `Dockerfile` compila el proyecto y sirve `dist/` con nginx, que reenvía `/api/`
 a `https://api.tonerinksas.com/` y redirige
 cualquier ruta desconocida a `index.html` para que React Router la resuelva.

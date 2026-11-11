@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: tonerink-fronted
+    runtime: static
+    buildCommand: corepack enable && pnpm install --frozen-lockfile && pnpm build
+    staticPublishPath: ./dist
+    routes:
+      - type: rewrite
+        source: /api/*
+        destination: https://api.tonerinksas.com/*
+      - type: rewrite
+        source: /*
+        destination: /index.html
