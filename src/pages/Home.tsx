@@ -1,6 +1,6 @@
 import { YStack } from 'tamagui'
 import { BrandsMarquee } from '../components/BrandsMarquee'
-import { CategoryCards } from '../components/CategoryCards'
+import { FeaturedProducts } from '../components/FeaturedProducts'
 import { Footer } from '../components/Footer'
 import { Hero } from '../components/Hero'
 import { ValueProposition } from '../components/ValueProposition'
@@ -10,8 +10,8 @@ export default function Home() {
     <YStack width="100%">
       <Hero />
       <YStack render="main" width="100%">
-        <CategoryCards />
         <BrandsMarquee />
+        <FeaturedProducts />
         <ValueProposition />
       </YStack>
       <Footer />

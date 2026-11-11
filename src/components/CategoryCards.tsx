@@ -104,6 +104,9 @@ export function CategoryCards() {
           <CategoryCard key={category.title} category={category} />
         ))}
       </YStack>
+      <Link to="/catalogo" className="catalog-button">
+        Ver catálogo
+      </Link>
     </YStack>
   )
 }

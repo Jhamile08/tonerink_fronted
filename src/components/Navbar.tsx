@@ -1,46 +1,21 @@
-import { Link } from 'react-router-dom'
-import { Paragraph, XStack } from 'tamagui'
-import { brand } from '../tamagui.config'
+import { Link, useLocation } from 'react-router-dom'
 
 type NavItem = { label: string; href: string }
+type NavbarProps = { items: readonly NavItem[]; variant?: 'transparent' | 'solid' }
 
-type NavbarProps = {
-  items: readonly NavItem[]
-  /** El home flota sobre la portada; el catálogo usa la barra azul sólida. */
-  variant?: 'transparent' | 'solid'
-}
-
-export function Navbar({ items, variant = 'transparent' }: NavbarProps) {
-  const solid = variant === 'solid'
-
+export function Navbar({ items }: NavbarProps) {
+  const { pathname } = useLocation()
   return (
-    <XStack
-      render="nav"
-      justifyContent="flex-end"
-      alignItems="center"
-      width="100%"
-      height={solid ? 56 : 80}
-      paddingRight={solid ? 20 : 80}
-      backgroundColor={solid ? brand.blue : 'transparent'}
-      zIndex={10}
-      $maxMd={{ justifyContent: 'center', paddingRight: 0 }}
-    >
-      {items.map((item) => (
-        <XStack key={item.href} alignItems="center" paddingHorizontal={10} $maxSm={{ paddingHorizontal: 5 }}>
-          <Link to={item.href} style={{ textDecoration: 'none' }}>
-            <Paragraph
-              color="white"
-              fontWeight="600"
-              fontSize={solid ? 18 : 22}
-              $maxSm={{ fontSize: 15 }}
-              $maxXs={{ fontSize: 13 }}
-              hoverStyle={{ opacity: 0.8 }}
-            >
-              {item.label}
-            </Paragraph>
-          </Link>
-        </XStack>
-      ))}
-    </XStack>
+    <nav className="site-nav" aria-label="Navegación principal">
+      <div className="nav-inner">
+        <Link to="/" className="brand-logo" aria-label="Tonerink, inicio">
+          <img src="/imgs/Toneink%20recortado.png" alt="Tonerink" />
+        </Link>
+        <div className="nav-links">
+          {items.map(item => <Link key={item.href} to={item.href}
+            className={item.href === pathname ? 'active' : undefined}>{item.label}</Link>)}
+        </div>
+      </div>
+    </nav>
   )
 }

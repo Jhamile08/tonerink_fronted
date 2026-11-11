@@ -24,7 +24,7 @@ export function BrandsMarquee() {
     <YStack
       className="brands-marquee"
       width="100%"
-      height={150}
+      height={120}
       overflow="hidden"
       justifyContent="center"
       shadowColor="#00000033"
@@ -35,9 +35,9 @@ export function BrandsMarquee() {
         {track.map((logo, index) => (
           <XStack
             key={`${logo.alt}-${index}`}
-            width={200}
-            height={150}
-            marginHorizontal={32}
+            width={120}
+            height={120}
+            marginHorizontal={24}
             alignItems="center"
             justifyContent="center"
             flexShrink={0}
@@ -46,7 +46,7 @@ export function BrandsMarquee() {
               src={logo.src}
               alt={logo.alt}
               aria-hidden={index >= BRAND_LOGOS.length}
-              style={{ width: '100%', objectFit: 'contain' }}
+              style={{ width: '100%', maxHeight: 56, objectFit: 'contain' }}
             />
           </XStack>
         ))}
